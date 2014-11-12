@@ -1,0 +1,97 @@
+.done{
+	text-decoration: line-through;
+	color:#ccc;
+}
+
+body{
+	background-image: url("http://www.desktopwallpapers4.me/photography/city-lights-behind-the-rainy-window-19141/#");
+}
+
+#main {
+	width: 600px;
+	height: 500px;
+	position: absolute;
+	left:50%;
+	margin-left:-300px;
+	top: 50%;
+	margin-top:-250px;
+	background-color:#ffffff;
+	border-radius: 4px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.45);
+	
+}
+
+#main #inputText{
+	font-size: 15px;
+	height:80px;
+	display:block;
+	position:absolute;
+	top:15px;
+	right: 15px;
+	left: 15px;
+}
+
+#main #inputTextBox{
+	height: 60px;
+	font-size:30px;
+	box-shadow: none;
+	outline: 0 none;
+	display:block;
+	font-weight: 300;
+}
+
+#main #clear{
+	width:570px;
+	height:60px;
+	display: block;
+	font-size: 30px;
+	bottom: 15px;
+	position: absolute;
+	left:15px;
+	right:15px;
+	font-weight: 300;
+}
+
+.toDoListItem{
+	font-size:35px;
+
+	position: relative;
+	left: 15px;
+	right: 15px;
+
+}
+
+.checkBox{
+	width: 30px;
+	height: 30px;
+	display:  inline-block;
+	bottom: 4px;
+	position: relative;
+}
+
+
+#main #todolistpanel{
+	left:15px;
+	right:15px;
+	position: absolute;
+	top:90px;
+	bottom: 90px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+
+}
+body{
+	background: url("http://www.freebestwallpapers.info/bulkupload//18092012/9//Abstract/Rain-on-Window-HD.jpg");
+	width:100%;
+	height:100%;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+
+html{
+	width:100%;
+	height:100%;
+}
+
+

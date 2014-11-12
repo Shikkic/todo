@@ -1,0 +1,43 @@
+<!doctype html5>
+<html lang="en" ng-app="ToDo">
+	<head>
+		<title>To Do list!</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+		<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+		<meta charset="UTF-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="app.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+		<div ng-controller="todoController" id="main">
+			<form name="frm" ng-submit="addTodo()">
+				<div class="input-group" id="inputText">
+					<input type="text" id="inputTextBox" class="form-control" placeholder="What do you need to do today?" name="newtodo" ng-model="newTodo" required />
+					<!--<button ng-disabled="frm.$invalid">Enter</button>-->
+				</div>
+			</form>
+			<div id="todolistpanel">
+				<!--
+				<ul id="toDoList">
+					<li ng-repeat="todo in todos">
+						<input type="checkbox" ng-model="todo.done"/>
+						<span ng-class="{'done':todo.done}">{{todo.title}}</span>
+					</li>
+				</ul>-->
+				
+				<div class="toDoListItem"  ng-repeat="todo in data.todos">
+					<input class="checkBox" type="checkbox" ng-model="todo.done"/>
+					<span ng-class="{'done':todo.done}">{{todo.title}}</span>
+				</div>	
+				
+			</div>
+			<button class="btn btn-default" id="clear" ng-click="clearCompleted()">Clear Completed</button>
+		</div>	
+	</body>
+</html>
